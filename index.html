@@ -29,7 +29,6 @@
 	<body>
 	
 	<h1>Alyssa Chavez Rubric 3</h1>
-	<p>&nbsp;</p>
 
 	<h2>For Loop</h2>
 	 
@@ -63,6 +62,49 @@
             document.write("Loop stopped!");
          //-->
       </script>
+		
+		<h2>Indexed Array</h2>
+		
+		<script>
+		
+		var o = new Object();
+			o["one"] = 1;
+			o["two"] = 2;
+			o["three"] = 3;
+			for(var i in o)
+			{
+     document.write(i + "=" + o[i] + '<br>');
+			}
+		</script>
+		
+		<h2>Array Methods - I used the join() method</h2>
+
+<p>I seperated the text using a * between them</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Photoshop", "Illustrator", "InDesign", "Dreamweaver"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+</script>
+		
+			<h2>Camel Case - dot syntax</h2>
+		
+		<script>
+		
+		var person = {};
+person['firstname'] = 'Mario';
+person['lastname'] = 'Rossi';
+
+console.log(person.firstname);
+// expected output: "Mario"
+
+person = {'firstname': 'John', 'lastname': 'Doe'}
+
+console.log(person['lastname']);
+// expected output: "Doe"
+			
+			</script>
 	
 		<footer id="footer">
   <p>Alyssa Chavez Rubric 3</p>
